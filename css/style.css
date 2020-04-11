@@ -111,8 +111,13 @@ body {
 
 .parent_container .middle_container {
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: row;
     flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     width: 100%;
     align-items: center;
     margin-top: 50px;
