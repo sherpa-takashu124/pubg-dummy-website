@@ -14,14 +14,15 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body {
     padding: 50px 40px;
-    /* background-image: linear-gradient(to right, #868f96 0%, #596164 100%); */
+    box-sizing: border-box;
+    height: 100vh;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    /* border: 5px solid linear-gradient(to right, #868f96 0%, #596164 100%); */
+    background-size: contain;
 }
 
 .parent_container {
@@ -135,6 +136,10 @@ body {
     font-size: 40px;
 }
 
+.parent_container .middle_container .left_container .main_text {
+    margin-top: 50px;
+}
+
 .parent_container .middle_container .left_container .main_text h5 {
     color: white;
     font-size: 16px;
@@ -165,6 +170,7 @@ body {
     color: var(--main-pubg-gold);
     border-radius: 30px;
     position: relative;
+    margin-bottom: 80px;
 }
 
 .parent_container .middle_container .left_container .main_text .play_btn h4 {
@@ -255,6 +261,9 @@ body {
     .parent_container .middle_container {
         margin-top: 80px;
     }
+    .parent_container .middle_container .left_container .main_text {
+        margin-top: 50px;
+    }
 }
 
 
@@ -321,6 +330,9 @@ body {
     .parent_container .middle_container {
         margin-top: 80px;
     }
+    .parent_container .middle_container .left_container .main_text {
+        margin-top: 30px;
+    }
 }
 
 
@@ -339,13 +351,6 @@ body {
     .parent_container .header .btn_div {
         transform: translateY(16px);
     }
-    .parent_container .middle_container {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        align-items: center;
-        margin-top: 50px;
-    }
     * {
         overflow: auto;
     }
@@ -358,11 +363,12 @@ body {
         background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
         /* border: 5px solid linear-gradient(to right, #868f96 0%, #596164 100%); */
     }
-    .parent_container .middle_container .left_container {
-        flex: 1;
-        transform: translateX(0);
-        margin-left: 0;
-        text-align: center;
+    .parent_container .middle_container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
     }
     .parent_container .middle_container .left_container {
         flex: 1;
@@ -385,6 +391,9 @@ body {
     .parent_container .middle_container .right_container img {
         width: 70%;
         text-align: center;
+    }
+    .parent_container .middle_container .left_container .main_text {
+        margin-top: 10px;
     }
 }
 
